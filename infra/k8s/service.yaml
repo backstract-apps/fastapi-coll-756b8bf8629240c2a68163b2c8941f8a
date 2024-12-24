@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fastapi-coll-756b8bf8629240c2a68163b2c8941f8a-srv
+spec:
+  selector:
+    app: fastapi-coll-756b8bf8629240c2a68163b2c8941f8a
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9011
+  type: ClusterIP
